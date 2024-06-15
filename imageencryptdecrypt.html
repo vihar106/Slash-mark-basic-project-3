@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Image Encryption/Decryption</title>
+  <style>
+    .imageContainer {
+      display: flex; 
+      gap: 20px;    
+    }
+
+    .imageContainer img {
+      max-width: 300px; 
+    }
+  </style>
+</head>
+<body>
+  <h1>Image Encryption/Decryption</h1>
+  
+  <input type="file" id="imageInput" accept="image/*">
+  <input type="text" id="keyInput" placeholder="Key (for decryption)"> 
+  <button id="encryptButton">Encrypt</button>
+  <button id="decryptButton">Decrypt</button>
+
+  <div class="imageContainer">
+    <div>
+      <h2>Original Image</h2>
+      <img id="originalImage" src="#" alt="Original Image" style="display: none;">
+    </div>
+    <div>
+      <h2>Encrypted Image</h2>
+      <img id="encryptedImage" src="#" alt="Encrypted Image" style="display: none;">
+    </div>
+    <div>
+      <h2>Decrypted Image</h2>
+      <img id="decryptedImage" src="#" alt="Decrypted Image" style="display: none;">
+    </div>
+  </div>
+
+  <div id="output"></div>
+  
+  <script src="test.js"></script> </body>
+</html>
